@@ -12,7 +12,8 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "postversion": "git push && git push --tags && npm run release",
 		"release": "npm run package && cd package && npm publish",
-    "cypress:open": "cypress open --config-file cypress.json"
+    "cypress:open": "cypress open --config-file cypress.json",
+    "cypress:run": "cypress run --config-file cypress.json"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
